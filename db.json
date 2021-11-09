@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "id": 2,
+      "text": "Learn react",
+      "day": "Tue, 6 Feb , 23:30",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Watch football",
+      "day": "Wed, 7 Feb , 4:30",
+      "reminder": true
+    },
+    {
+      "text": "Play fm",
+      "day": "Tue, 09 Nov , 18:00 ",
+      "reminder": true,
+      "id": 4
+    },
+    {
+      "text": "50",
+      "day": "Wed, 03 Nov , 00:00 ",
+      "reminder": false,
+      "id": 5
+    },
+    {
+      "text": "Foray Quinin",
+      "day": "Fri, 12 Nov , 17:00 ",
+      "reminder": true,
+      "id": 6
+    },
+    {
+      "text": "Kill Bill",
+      "day": "Thu, 04 Nov , 17:00 ",
+      "reminder": true,
+      "id": 7
+    }
+  ]
+}
