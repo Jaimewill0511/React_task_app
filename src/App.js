@@ -23,7 +23,7 @@ useEffect(() => {
   }, [])
 
 const fetchTasks = async () => {
-    const res = await fetch('http://localhost:8888/tasks')
+    const res = await fetch('https://reacttask-app-backend.herokuapp.com/tasks')
     const data = await res.json();
     return  data
     
