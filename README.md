@@ -1,6 +1,22 @@
-# Getting Started with Create React App
+<h1 align="center">Welcome to your Task app 👋</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 🏠 [Homepage](https://modest-hoover-b0e67a.netlify.app/)
+
+> simple MERN stack task app with a nodejs backend and react frontend with a mongodb database
+> doulble click your task to add remainder 
+
+## Author
+
+👤 **B.William**
+
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+
+
 
 ## Available Scripts
 
