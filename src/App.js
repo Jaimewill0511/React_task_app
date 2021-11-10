@@ -30,14 +30,14 @@ const fetchTasks = async () => {
   
   }
 const fetchTask = async (id) => {
-    const res = await fetch(`http://localhost:8888/tasks/${id}`)
+    const res = await fetch(`https://reacttask-app-backend.herokuapp.com/${id}`)
     let data = await res.json();
     data = await data.task
     return  data
   
   }
 const deleteTask = async (id) => {
-    await fetch(`http://localhost:8888/tasks/${id}`, {
+    await fetch(`https://reacttask-app-backend.herokuapp.com/${id}`, {
       method: 'DELETE'
     })
 
@@ -65,7 +65,7 @@ const handleToggle = async (id) => {
 
 
 
-    const res = await fetch(`http://localhost:8888/tasks/${id}`, {
+    const res = await fetch(`https://reacttask-app-backend.herokuapp.com/${id}`, {
       method: 'PUT',
       headers: {
       'Content-Type': 'application/json',
