@@ -5,7 +5,6 @@ import AddTask from './components/AddTask';
 
 
 
-
 function App() {
   const [tasks, setTasks] = useState([])
   const [showAddTask, setshowAddTask] = useState(false)
@@ -30,7 +29,7 @@ const fetchTasks = async () => {
   
   }
 const fetchTask = async (id) => {
-    const res = await fetch(`https://reacttask-app-backend.herokuapp.com/${id}`)
+    const res = await fetch(`https://reacttask-app-backend.herokuapp.com/tasks/${id}`)
     let data = await res.json();
     data = await data.task
     return  data
@@ -65,7 +64,7 @@ const handleToggle = async (id) => {
 
 
 
-    const res = await fetch(`https://reacttask-app-backend.herokuapp.com/${id}`, {
+    const res = await fetch(`https://reacttask-app-backend.herokuapp.com/tasks/${id}`, {
       method: 'PUT',
       headers: {
       'Content-Type': 'application/json',
@@ -86,8 +85,9 @@ const handleToggle = async (id) => {
   return ( 
     <div className = "container" >
       
-      <Header click={setshowAddTask} state={showAddTask}/> 
-      {showAddTask && <AddTask onAdd={submit}/>}
+      <Header click={setshowAddTask} state={showAddTask}/>
+
+      {showAddTask && <AddTask onAdd={submit} />}
       {tasks.length > 0 ? ( < Tasks className = 'task'
           tasks = {
             tasks
