@@ -36,7 +36,7 @@ const fetchTask = async (id) => {
   
   }
 const deleteTask = async (id) => {
-    await fetch(`https://reacttask-app-backend.herokuapp.com/${id}`, {
+    await fetch(`https://reacttask-app-backend.herokuapp.com/tasks/${id}`, {
       method: 'DELETE'
     })
 
