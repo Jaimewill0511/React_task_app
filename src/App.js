@@ -47,7 +47,7 @@ const submit = async (task) =>{
     const currentYear = new Date().getFullYear().toString(); 
     task.day = task.day.toString()
     task.day = `${task.day.slice(0, 3)}, ${task.day.slice(8, 10)} ${task.day.slice(4, 7)} ${currentYear === task.day.slice(11, 15)? '':task.day.slice(11, 15)}, ${task.day.slice(16, 21)} `
-    const res = await fetch('http://localhost:8888/tasks', {
+    const res = await fetch('https://reacttask-app-backend.herokuapp.com/tasks', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
